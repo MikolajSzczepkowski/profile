@@ -1,0 +1,516 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: url(images/background.png) repeat;
+}
+.margin-left{
+	margin-left: 15px;
+}
+#navigation{
+	background: #fff;
+}
+#navigation img{
+	margin: 10px 0;
+}
+.menu-size{
+	height: 50px;
+}
+#user{
+	display: inline-block;
+}
+.pointer{
+	cursor: pointer;
+}
+.login{
+	background: #363636;
+	height: 200px;
+	border-top: 5px solid #e43f3f;
+}
+.login-text{
+	width: 140px;
+	height: 30px;
+	background: #fff;
+	margin-top: 85px;
+	font-weight: bold;
+	line-height: 2;
+}
+.friends{
+	background: #fff;
+	border-left: 1px solid #d8d8d8;
+	padding-top: 20px;	
+	z-index: 100;
+}
+.friends-search-img{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px; 
+	background: #d8d8d8;
+	display: inline-block;
+	list-style: none;
+}
+#userSearch{
+	font-style: italic;
+	font-weight: lighter;
+}
+.friends-header{
+	font-size: 12px;
+	font-style: italic;
+	margin: 10px 0 0 0;
+	border-bottom: 1px solid #d8d8d8; 
+}
+.friends-list{
+	margin: 5px 0 0 0;
+	overflow-y: scroll;
+	height: 400px;
+}
+.friends-list li{
+	font-size: 12px;
+	font-style: italic;
+	margin: 5px 0 0 0;
+	list-style-position: inside;
+	list-style-image: url(#);
+	cursor: pointer;
+}
+.friends-list li:hover{
+	background: #d8d8d8;
+	color: #fff;
+}
+.friends-list li img{
+	width: 30px;
+}
+.friends-active img{
+	border: 2px solid #1182f5;
+	list-style-image: url(#);
+}
+.friends-list-buttons{
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.friends-list-buttons li{
+	display: inline-block;
+	margin-left: 10px; 
+}
+.friends-list-buttons li img{
+	width: 15px;
+}
+.social{
+	height: 50px;
+	border-top: 3px solid #e43f3f;
+	border-bottom: 1px solid #d8d8d8;
+}
+.social-list-group{
+	height: 27px;
+}
+.social-list{
+	display: inline-block;
+	position: absolute;
+}
+.social-list:nth-child(1){
+	margin-left: 24%;
+}
+.social-list:nth-child(2){
+	margin-left: 37%;
+}
+.social-list:nth-child(3){
+	margin-left: 50%;
+}
+li.social-list img{
+ 	margin: 5px 0 0;
+}
+.main{
+	background: #fff;
+	margin-top: 15px;
+	border-top: 3px solid #e43f3f;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+.main-left h6{
+	font-weight: bold;
+}
+.main-left h6 img{
+	width: 20px;
+	margin: 0 5px 0 3px;
+}
+.game-image{
+	width: 200px;
+}
+.game-image-hover{
+	width: 200px;
+	height: 201px;
+	position: absolute;
+	z-index: 10;
+	background: rgba(250, 250, 250, 0.9); 
+}
+.game-hover-players{
+	font-size: 12px;
+	margin: 20px 0 0 0;
+}
+.game-hover-info{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 0 0;
+}
+.game-hover-fee{
+	font-size: 24px;
+	font-weight: bold;
+	color: #e43f3f;
+	margin: 20px 0 0 0; 
+}
+.game-name{
+	width: 197px;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 3px;
+	border-bottom: 1px solid #d8d8d8; 
+}
+.tournament-border{
+	border-left: 3px solid #e43f3f; 
+}
+.ladder-border{
+	border-left: 3px solid #f4cb1e; 
+}
+.decoration-bar{
+	display: none;
+}
+.match-header{
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	padding: 15px 0;
+	margin: 0;
+}
+.match-header-background{
+	background: #363636;
+	margin: 0 0 -25px 15px;
+}
+.match-wrapper{
+	background: #f4f4f4;
+	padding: 0;
+	margin: 5px 0 0 15px;
+	cursor: pointer;
+}
+.match-wrapper:hover{
+	background: #d8d8d8;
+}
+.match{
+	display: inline-block;
+	padding: 5px 0;
+}
+.match-team{
+	margin: 0 0 0 -15px;
+	font-style: italic;
+}
+.match-team img{
+	margin: 0 5px 0 0;
+	border: 2px solid #363636;
+}
+.match-score{
+	float: right;
+	margin: 7px 0 0 0;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+}
+.match-winner{
+	color: #e43f3f;
+}
+.match-winner img{
+	border: 2px solid #e43f3f;
+}
+.match-info-wrapper{
+	padding: 45px 0 0 0;
+	margin: 0 0 0 15px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.match-info{
+	font-style: italic;
+	font-weight: lighter;
+	padding: 0 0 5px 0; 
+}
+.match-info-img img{
+	width: 20px;
+	margin-left: -5px;
+}
+.match-show-more{
+	height: 20px;
+	padding-top: 15px;
+	padding-bottom: 50px; 
+	color: #363636;
+}
+
+/*...........profile style .............*/
+.main-inner-wrapper{
+	padding: 30px 20px;
+}
+.top-row{
+	width: 100%;
+	margin: 0;
+	background-image: url(images/top-background.jpg);
+	background-size: cover;
+}
+.top-row a img{
+	background: #1182f5;
+}
+.player-box{
+	margin: -5px 0 0 0;
+}
+.player-box-bar{
+	width: 120px;
+	border-top: 3px solid #1182f5;
+	margin-top: -7px;  
+}
+.player-box-bar-cover{
+	width: 32px;
+	position: absolute;
+	border-top: 3px solid #d8d8d8;
+	margin: -3px 0 0 73px; 
+}
+.player-avatar-box{
+	width: 120px;
+	border: 2px solid #1182f5;
+}
+.player-edit{
+	position: absolute;
+	margin: 0 0 0 80px;
+}
+.player-icon-wrapper{
+	width: 130px;
+	padding: 0;
+	margin-left: -4px; 
+}
+.player-icon-correction{
+	width: 40.5px;
+	margin: 0 1px;
+	padding: 0;
+}
+.player-box p{
+	width: 120px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	background: #1182f5;
+	margin: 7px 0 7px 0;
+}
+.player-likes{
+	width: 120px;
+	margin: 7px 0 0 0;
+	background: #363636;
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+.player-likes img{
+	margin-top: -5px; 
+}
+.player-name-box{
+	margin: 0;
+	color: #fff;
+}
+.player-name-box h2{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 0; 
+}
+.player-name-box p{
+	font-size: 12px;
+}
+.middle-row{
+	height: 30px;
+	margin: 7px 0;
+	background: #363636;
+	color: #fff;
+}
+@media screen and (min-width: 480px){
+}
+@media screen and (min-width: 640px){
+	.match-info img{
+		margin: 0 85px 0 0;
+	}
+	.social-list:nth-child(1){
+		margin-left: 40%;
+	}
+	.social-list:nth-child(2){
+		margin-left: 45%;
+	}
+	.social-list:nth-child(3){
+		margin-left: 50%;
+	}
+}
+@media screen and (min-width: 768px){
+	.decoration-bar{
+		display: inline-block;
+		margin: 40px 0 0 0;
+		padding: 0;
+	}
+	.decoration-bar img{
+		height: 150px;
+		float: right;
+	}
+	.match-info img{	
+		margin: 0 105px 0 0;
+	}
+	.game-image{
+		width: 150px;
+	}
+	.game-image-hover{
+		width: 150px;
+		height: 151px;
+	}
+	.game-hover-players{
+		margin: 10px 0 0 0;
+		font-size: 10px;
+	}
+	.game-hover-info{
+		margin: 10px 0 0 0;
+		font-size: 12px;
+	}
+	.game-hover-fee{
+		margin: 10px 0 0 0;
+		font-size: 20px; 
+	}
+	.game-name{
+	width: 147px;
+	}
+	.player-name-box{
+		padding-left: 35px;
+	}
+}
+@media screen and (min-width: 990px){
+	.menu-size{
+		width: 60px;
+		height: 50px;
+	}
+	.friends-row{
+		position: absolute;
+		width: 100%;
+	}
+	.friends{
+		margin-top: 5px;
+	}
+	#userSearch{
+		width: 100%;
+	}
+	.main-left h6 img{
+		width: 15px;
+	}
+	.social{
+		margin-top: 0;
+	}
+	.social-list{
+		position: relative;
+	}
+	.social-list:nth-child(1){
+		margin-left: 0;
+	}
+	.social-list:nth-child(2){
+		margin-left: 10px;
+	}
+	.social-list:nth-child(3){
+		margin-left: 10px;
+	}
+	.decoration-bar{
+		margin: 35px 0 0 0;
+	}
+	.border-bottom:hover{
+		box-shadow: 0 5px 0 #fff;
+	}
+	.top-row{
+		height: 300px;
+	}
+	.top-row a {
+		width: 45px;
+	}
+	.bottom-align{
+		position: absolute;
+		margin: 265px 0 0 0;
+	}
+	.player-name-box{
+		margin: -10px 0 0 0;
+		padding-left: 0;
+	}
+}
+@media screen and (min-width: 1024px){
+	.match-info{
+		font-size: 12px;
+	}
+	.main-left h6{
+		font-size: 10px;
+	}
+	.main-left h6 img{
+		margin: 0 5px 0 3px;
+	}
+	.main-right{
+		position: absolute;
+		margin: 10px 0 0 0;
+	}
+	.login-text{
+    	margin: 80px 0 0 15px;
+   	}
+	.social{
+		height: 50px;
+	}
+	li.social-list img{
+	 	margin: 8px 0 0 0;
+	}
+}
+@media screen and (min-width: 1200px){
+	.game-image{
+		width: 200px;
+	}
+	.game-image-hover{
+		width: 200px;
+		height: 201px;
+	}
+	.game-hover-players{
+		margin: 20px 0 0 0;
+	}
+	.game-hover-info{
+		margin: 20px 0 0 0;
+	}
+	.game-hover-fee{
+		margin: 20px 0 0 0; 
+	}
+	.game-name{
+		width: 197px;
+	}
+	.decoration-bar img{
+		height: 200px;
+	}
+	.player-box-bar{
+		margin-left: 16px;  
+	}
+	.player-box p{
+		margin: 7px 0 7px 16px;
+	}
+	.player-likes{
+		margin: 7px 0 0 16px;
+	}
+	.player-name-box{
+		margin: -10px 0 0 -20px;
+		padding: 0;
+	}
+	.player-icon-wrapper{
+		width: 130px;
+		padding: 0;
+		margin-left: 13px; 
+	}
+}
+@media screen and (min-width: 1280px){
+	.match-info{
+		font-size: 14px;
+	}
+	.main-left h6{
+		font-size: 12px;
+	}
+	.main-left h6 img{
+		width: 20px;
+		margin: 0 5px 0 3px;
+	}
+	.decoration-bar{
+		margin: 40px 0 0 0;
+	}
+	.login-text{
+    	margin: 80px 0 0 45px;
+   	}
+}
