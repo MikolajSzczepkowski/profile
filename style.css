@@ -316,10 +316,12 @@ li.social-list img{
 	font-size: 12px;
 }
 .middle-row{
-	height: 30px;
 	margin: 7px 0;
 	background: #363636;
 	color: #fff;
+}
+.middle-row p{
+	padding: 5px 0 0 5px;
 }
 @media screen and (min-width: 480px){
 }
@@ -374,6 +376,18 @@ li.social-list img{
 	}
 	.player-name-box{
 		padding-left: 35px;
+	}
+	.middle-row{
+		height: 30px;
+	}
+	.middle-row p{
+		display: inline-block;
+		margin: 0 0 0 40px;
+		font-style: italic;
+		font-weight: 12px;
+	}
+	.middle-row p:nth-of-type(1){
+		margin-left: 80px;
 	}
 }
 @media screen and (min-width: 990px){
