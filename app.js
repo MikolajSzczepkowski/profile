@@ -39,4 +39,10 @@ $(function (){
 	$(".game-image").on("mouseleave", function(){
 		$(".game-image-hover").remove();
 	});
+	$( "#progressbar1" ).progressbar({
+      value: 50
+    });
+    $( "#progressbar2" ).progressbar({
+      value: 75
+    });
 });
