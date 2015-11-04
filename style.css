@@ -32,6 +32,8 @@ body{
 	margin-top: 85px;
 	font-weight: bold;
 	line-height: 2;
+	margin-left: auto;
+	margin-right: auto;
 }
 .friends{
 	background: #fff;
@@ -477,6 +479,46 @@ li.social-list img{
 	font-weight: bold;
 	font-size: 14px; 
 }
+.profile-views{
+	float: right;
+	padding: 0;
+}
+.profile-views h5{
+	height: 32px;
+	margin: 0;
+	padding: 10px 5px;
+	background: #1182f5;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	color: #fff;
+}
+.profile-views p{
+	padding: 5px 0;
+	margin: 0;
+	border-bottom: 1px solid #d8d8d8;
+	font-size: 12px;
+	font-style: italic;
+}
+.profile-views p span{
+	float: right;
+	padding: 10px 5px 0 0; 
+}
+.profile-views p img{
+	width: 39px;
+	margin: 0 5px 0 0;
+	border: 2px solid #363636; 
+}
+.online-player{
+	color: #1182f5;
+}
+.online-player span{
+	color: #333;
+}
+.profile-views .online-player img{
+	border: 2px solid #1182f5;
+}
 @media screen and (min-width: 480px){
 }
 @media screen and (min-width: 640px){
@@ -561,6 +603,9 @@ li.social-list img{
 	.level{
 		margin: 0 0 0 -20px;
 	}
+	.profile-views{
+		width: 29.333333%;
+	}
 }
 @media screen and (min-width: 990px){
 	.menu-size{
@@ -573,6 +618,9 @@ li.social-list img{
 	}
 	.friends{
 		margin-top: 5px;
+	}
+	.friends-list{
+		height: auto;
 	}
 	#userSearch{
 		width: 100%;
@@ -687,6 +735,9 @@ li.social-list img{
 	.latest-matches-box-wrapper p img{
 		float: right;
 		margin: 0 30px 0 0;
+	}
+	.profile-views{
+		width: 31.333333%;
 	}
 }
 @media screen and (min-width: 1280px){
