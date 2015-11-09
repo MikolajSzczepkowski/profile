@@ -4,8 +4,16 @@
 	background-image: url(./../images/top-background.jpg);
 	background-size: cover;
 }
-.top-row a img{
+.top-row a img:hover{
+	transform: translateY(-5px);
+}
+.top-row a{
+	width: 35px;
+	padding: 0;
 	background: #1182f5;
+}
+.top-row-social{
+	width: 42px;
 }
 .player-box{
 	margin: -5px 0 0 0;
@@ -27,23 +35,30 @@
 }
 .player-edit{
 	position: absolute;
-	margin: 0 0 0 80px;
+	margin: 0 0 0 85px;
 }
 .player-icon-wrapper{
 	width: 130px;
 	padding: 0;
-	margin-left: -4px; 
+	margin-left: -1px; 
 }
-.player-icon-correction{
+.player-icon{
 	width: 40.5px;
 	margin: 0 1px;
 	padding: 0;
+}
+.player-icon a{
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	background: #1182f5;
 }
 .player-box p{
 	width: 120px;
 	font-family: arial;
 	font-weight: bold;
 	font-size: 12px;
+	color: #fff;
 	background: #1182f5;
 	margin: 7px 0 7px 0;
 }
@@ -252,6 +267,9 @@
 	font-size: 12px;
 	font-style: italic;
 }
+.profile-views p:hover{
+	background: #d8d8d8;
+}
 .profile-views p span{
 	float: right;
 	padding: 10px 5px 0 0; 
@@ -312,7 +330,7 @@
 	.top-row{
 		height: 300px;
 	}
-	.top-row a {
+	.top-row-social{
 		width: 45px;
 	}
 	.bottom-align{
@@ -344,9 +362,7 @@
 		padding: 0;
 	}
 	.player-icon-wrapper{
-		width: 130px;
-		padding: 0;
-		margin-left: 13px; 
+		margin-left: 15px; 
 	}
 	.latest-matches-box-wrapper p img{
 		float: right;
