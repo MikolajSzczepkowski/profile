@@ -1,21 +1,21 @@
 $(function (){
-	var pageHeight = $(document).height(),
+	var pageHeight = $(window).height()-195;
 		pageWidth = $(document).width();
 
 	if(pageWidth>=990){
-		$(".friends").css("height", pageHeight);
+		$(".friends-list").css("height", pageHeight);
 	}
 	else{
-		$(".friends").css("height", "auto");
+		$(".friends-list").css("height", "400px");
 	}
 	$(window).resize(function(){
-		pageHeight = $(document).height(),
+		pageHeight = $(window).height()-195,
     	pageWidth = $(document).width();
     	if(pageWidth>=990){
-			$(".friends").css("height", pageHeight);
+			$(".friends-list").css("height", pageHeight);
 		}
 		else{
-			$(".friends").css("height", "auto");
+			$(".friends-list").css("height", "400px");
 		}
 	});
 
@@ -23,7 +23,7 @@ $(function (){
 		$("#friends").toggle( "slide", { 
 			direction: "right",
 			easing: "swing"
-		},500);
+		},200);
 	});
 
 	$(".game-image").on("mouseenter", function(){
@@ -33,8 +33,7 @@ $(function (){
 		$(".game-image-hover").append("<p class='text-center text-uppercase game-hover-fee'></p>");
 		$(".game-hover-players").html("players<br>24/64");
 		$(".game-hover-info").html("Registration ends<br> 28.10.2015");
-		$(".game-hover-fee").html("678$");
-		
+		$(".game-hover-fee").html("678$");	
 	});
 	$(".game-image").on("mouseleave", function(){
 		$(".game-image-hover").remove();
@@ -45,4 +44,34 @@ $(function (){
     $( "#progressbar2" ).progressbar({
       value: 75
     });
+    $( "#calendar" ).datepicker({ firstDay: 1});
+    
+    var percent = 0, bar = $('.transition-timer-carousel-progress-bar'), crsl = $('#myCarousel');
+			function progressBarCarousel() {
+			  bar.css({width:percent+'%'});
+			 percent = percent +0.5;
+			  if (percent>100) {
+			      percent=0;
+			      crsl.carousel('next');
+			  }      
+			}
+			crsl.carousel({
+			    interval: false,
+			    pause: true
+			}).on('slid.bs.carousel', function () {percent=0;});var barInterval = setInterval(progressBarCarousel, 30);
+			crsl.hover(
+			    function(){
+			        clearInterval(barInterval);
+			    },
+			    function(){
+			        barInterval = setInterval(progressBarCarousel, 30);
+			    })
+	$(".newest").on("mouseenter", function(){
+		$(this).append("<div class='newest-hover'></div>");
+		$(".newest-hover").append("<p class='text-center text-uppercase'>visit</p>");
+		$(".newest-hover").append("<p class='text-center text-uppercase'>profile</p>");	
+	});
+	$(".newest").on("mouseleave", function(){
+		$(".newest-hover").remove();
+	});
 });
