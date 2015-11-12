@@ -20,14 +20,13 @@
 }
 .player-box-bar{
 	width: 120px;
-	border-top: 3px solid #1182f5;
-	margin-top: -7px;  
+	height: 3px;
+	margin-top: -7px;
+	margin-bottom: 3px;
+	background: #d8d8d8;
 }
-.player-box-bar-cover{
-	width: 32px;
-	position: absolute;
-	border-top: 3px solid #d8d8d8;
-	margin: -3px 0 0 73px; 
+.box-bar-cover{
+	background: #1182f5;
 }
 .player-avatar-box{
 	width: 120px;
@@ -147,8 +146,12 @@
 }
 .latest-matches-box-bar{
 	width: 120px;
-	border-top: 3px solid #363636;
-	margin-top: -7px;
+	height: 3px;
+	margin-bottom: 3px;
+	background: #d8d8d8;
+}
+.latest-matches-box-bar .box-bar-cover{
+	background: #363636;
 }
 .latest-matches-img{
 	width: 120px;
@@ -172,8 +175,8 @@
 	color: #fff;
 	font-weight: bold;
 }
-.winner .latest-matches-box-bar{
-	border-top: 3px solid #e43f3f;
+.winner .box-bar-cover{
+	background: #e43f3f;
 }
 .winner .latest-matches-img{
 	border: 2px solid #e43f3f;
@@ -209,41 +212,36 @@
 	margin: 0 0 30px 0;
 }
 .game-levels{
-	padding: 0px;
-}
-.game-levels img{
-	vertical-align: top;
-	margin: 0 -4px 0 0;
-}
-.ui-progressbar{
 	width: 75%;
 	height: 35px;
+	margin-bottom: 0;
 	background: #363636;
 	border: none;
 	border-radius: 0; 
 	display: inline-block;
 }
-.ui-progressbar .ui-progressbar-value{
-	height: 36px;
-	border: none;
-	border-radius: 0;
-	background: #e43f3f;
-}
-.progressbar-cover{
+.game-levels p{
+	margin: 7px 0 0 33%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-style: italic;
 	color: #fff;
 	position: absolute;
-	width: 75%;
-	margin: 9px 0 0 0;
+}
+.game-levels-wrapper img{
+	vertical-align: top;
+	margin: 0 -4px 0 0;
+}
+.progressbar-cover{
+	background: #e43f3f;
 }
 .level{
-	height: 35px;
-	padding: 9px 0 0 0;
+	margin: 7px 0 0 5px;
 	font-family: arial;
 	font-weight: bold;
-	font-size: 14px; 
+	font-size: 14px;
+	vertical-align: top;
+	display: inline-block;
 }
 .profile-views{
 	float: right;
@@ -318,9 +316,6 @@
 	}
 	.game-levels-wrapper{
 		margin: 0;
-	}
-	.level{
-		margin: 0 0 0 -20px;
 	}
 	.profile-views{
 		width: 29.333333%;
