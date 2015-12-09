@@ -28,6 +28,13 @@
 .box-bar-cover{
 	background: #1182f5;
 }
+.progress .badge{
+	position: absolute;
+    margin-top: -20px;
+    margin-left: 82px;
+    background: #363636;
+    display: none;
+}
 .player-avatar-box{
 	width: 120px;
 	border: 2px solid #1182f5;
