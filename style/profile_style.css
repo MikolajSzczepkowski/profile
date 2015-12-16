@@ -10,7 +10,7 @@
 .top-row a{
 	width: 35px;
 	padding: 0;
-	background: #1182f5;
+	background: #e43f3f;
 }
 .top-row-social{
 	width: 42px;
@@ -39,9 +39,10 @@
 	width: 120px;
 	border: 2px solid #1182f5;
 }
-.player-edit{
+a.player-edit{
 	position: absolute;
 	margin: 0 0 0 85px;
+	background: #1182f5;
 }
 .player-icon-wrapper{
 	width: 130px;
@@ -57,7 +58,7 @@
 	width: 35px;
 	height: 35px;
 	padding: 0;
-	background: #1182f5;
+	background: #e43f3f;
 }
 .player-box p{
 	width: 120px;
@@ -71,7 +72,7 @@
 .player-likes{
 	width: 120px;
 	margin: 7px 0 0 0;
-	background: #363636;
+	background: #e43f3f;
 	font-family: arial;
 	font-size: 24px;
 	font-weight: bold;
@@ -259,11 +260,10 @@ a.active img{
 	height: 32px;
 	margin: 0;
 	padding: 10px 5px;
-	background: #1182f5;
+	background: #363636;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-style: italic;
-	font-weight: bold;
 	color: #fff;
 }
 .profile-views p{
