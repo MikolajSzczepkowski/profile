@@ -175,6 +175,9 @@ a.active img{
 	margin: 0 0 15px 0;
 	cursor: pointer;
 }
+.latest-matches-box-wrapper p:hover{
+	color: #e43f3f;
+}
 .latest-matches-box-wrapper span{
 	margin: 140px 0 0 130px;
 	padding: 0 8px 2px 8px;
