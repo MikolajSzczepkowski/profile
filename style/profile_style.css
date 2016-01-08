@@ -7,7 +7,7 @@
 	background-image: url(./../images/top-background.jpg);
 	background-size: cover;
 }
-.top-row a img:hover{
+.top-row a:hover img{
 	transform: translateY(-5px);
 }
 .top-row a{
@@ -19,13 +19,13 @@
 	width: 42px;
 }
 .player-box{
-	margin: -5px 0 0 0;
+	margin: -2px 0 0 0;
 }
 .player-box-bar{
 	width: 120px;
 	height: 3px;
 	margin-top: -7px;
-	margin-bottom: 3px;
+	margin-bottom: 6px;
 	background: #d8d8d8;
 }
 .box-bar-cover{
@@ -33,19 +33,36 @@
 }
 .progress .badge{
 	position: absolute;
-    margin-top: -20px;
-    margin-left: 82px;
+    margin-top: -25px;
+    margin-left: 22px;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0;
     background: #363636;
-    display: none;
+}
+.progress:hover .badge{
+	opacity: 1;
+}
+.player-box #playerAvatarBox{
+	width: 120px;
+	background: #fff;
 }
 .player-avatar-box{
 	width: 120px;
-	border: 2px solid #1182f5;
+	border: 3px solid #1182f5;
+}
+#playerAvatarBox:hover img{
+	opacity: 0.5;
+}
+#playerAvatarBox:hover a, #playerAvatarBox:hover a img{
+	opacity: 1;
 }
 a.player-edit{
-	position: absolute;
 	margin: 0 0 0 85px;
+	position: absolute;
+	opacity: 0;
 	background: #1182f5;
+	z-index: 2;
 }
 .player-icon-wrapper{
 	width: 130px;
@@ -109,6 +126,9 @@ a.player-edit{
     margin: 0 0 7px 0;
     background: #e43f3f;
 }
+.profile-menu a:hover img{
+	background: #363636;
+}
 a.active img{ 
     background: #363636;
 }
@@ -129,25 +149,41 @@ a.active img{
 	font-style: italic;
 	border-bottom: 1px solid #d8d8d8;
 }
-.online-matches{
+.upcoming-matches{
 	font-size: 12px;
 	font-style: italic;
 	list-style: none;
 	padding: 0;
 }
-.online-matches li{
+.upcoming-matches li{
 	padding: 0 0 10px 0;
+	cursor: pointer;
 }
-.online-matches img{
+.upcoming-matches li:hover{
+	color: #e43f3f;
+}
+.upcoming-matches img{
 	width: 20px;
 }
 .latest-matches-box-wrapper{
-	padding: 0 0 25px 0;
+	padding-bottom: 25px;
+	padding-left: 0;
 }
 .latest-matches-box-wrapper p{
 	font-style: italic;
 	font-size: 12px;
 	margin: 0 0 15px 0;
+	cursor: pointer;
+}
+.latest-matches-box-wrapper span{
+	margin: 140px 0 0 130px;
+	padding: 0 8px 2px 8px;
+	position: absolute;
+	background: #e43f3f;
+	color: #fff;
+	font-weight: bold; 
+	border-radius: 5px;
+	z-index: 5;
 }
 .latest-matches-box-wrapper p img{
 	width: 20px;
@@ -155,19 +191,30 @@ a.active img{
 .latest-matches-box{
 	padding-left: 0;
 	padding-bottom: 15px;
+	cursor: pointer;
+}
+.latest-matches-box:hover p{
+	background: #1182f5;
+}
+.latest-matches-box:hover img{
+	opacity: 0.5
 }
 .latest-matches-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 	background: #d8d8d8;
 }
 .latest-matches-box-bar .box-bar-cover{
 	background: #363636;
+	float: left;
+}
+div.progress.latest-matches-box-bar span{
+	margin-left: 82px;
 }
 .latest-matches-img{
 	width: 120px;
-	border: 2px solid #363636;
+	border: 3px solid #363636;
 }
 .latest-matches-box p{
 	width: 120px;
@@ -184,6 +231,7 @@ a.active img{
 	padding: 6px 0 0 12px;
 	background: #363636;
 	position: absolute;
+	z-index: 2;
 	color: #fff;
 	font-weight: bold;
 }
@@ -191,7 +239,7 @@ a.active img{
 	background: #e43f3f;
 }
 .winner .latest-matches-img{
-	border: 2px solid #e43f3f;
+	border: 3px solid #e43f3f;
 }
 .winner .img-cover-box{
 	background: #e43f3f;
@@ -201,6 +249,13 @@ a.active img{
 }
 .featured-teams div{
 	width: 120px;
+	cursor: pointer;
+}
+.featured-teams div:hover p{
+	background: #1182f5;
+}
+.featured-teams div:hover img{
+	opacity: 0.5
 }
 .featured-teams h6{
 	width: 120px;
@@ -217,7 +272,7 @@ a.active img{
 }
 .featured-teams img{
 	width: 120px;
-	border: 2px solid #1182f5;
+	border: 3px solid #1182f5;
 }
 .game-levels-wrapper{
 	padding: 0px;
@@ -279,6 +334,13 @@ a.active img{
 .profile-views p:hover{
 	background: #d8d8d8;
 }
+.profile-views p a{
+	text-decoration: none;
+	color: #333;
+}
+.profile-views p a:hover{
+	color: #e43f3f;
+}
 .profile-views p span{
 	float: right;
 	padding: 10px 5px 0 0; 
@@ -288,13 +350,13 @@ a.active img{
 	margin: 0 5px 0 0;
 	border: 2px solid #363636; 
 }
-.online-player{
+p.online a{
 	color: #1182f5;
 }
-.online-player span{
+p.online span{
 	color: #333;
 }
-.profile-views .online-player img{
+.profile-views .online img{
 	border: 2px solid #1182f5;
 }
 @media screen and (min-width: 768px){
@@ -326,6 +388,9 @@ a.active img{
 		border-left: 1px solid #d8d8d8;
 		border-right: 1px solid #d8d8d8; 
 	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 110px;
+	}
 	.game-levels-wrapper{
 		margin: 0;
 	}
@@ -351,6 +416,9 @@ a.active img{
 	.profile-menu a img{
 		width: 78px;
 	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 118px;
+	}
 }
 @media screen and (min-width: 1024px){
 	.profile-menu img{
@@ -360,6 +428,9 @@ a.active img{
 @media screen and (min-width: 1200px){
 	.player-box-bar{
 		margin-left: 16px;  
+	}
+	.player-box #playerAvatarBox{
+		margin-left: 16px;
 	}
 	.player-box p{
 		margin: 7px 0 7px 16px;
@@ -386,5 +457,35 @@ a.active img{
 	}
 	.profile-menu a img{
 		margin: 0 0 7px 0;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even){
+		padding-left: 15px;
+		padding-right: 0;
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) p{
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) p img{
+		margin: 0 0 0 30px;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box{
+		padding-right: 0;
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box .box-bar-cover{
+		float: left;
+	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 113px;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) span{
+		margin: 92px 0 0 133px;
+	}
+	div.progress.latest-matches-box-bar span{
+		margin: -25px 0 0 85px;
 	}
 }
