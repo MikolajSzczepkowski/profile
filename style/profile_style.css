@@ -36,8 +36,8 @@
     margin-top: -25px;
     margin-left: 22px;
     padding: 5px;
-    border-radius: 10px;
     opacity: 0;
+    border-radius: 10px;
     background: #363636;
 }
 .progress:hover .badge{
@@ -176,7 +176,7 @@ a.active img{
 	cursor: pointer;
 }
 .latest-matches-box-wrapper p:hover{
-	color: #e43f3f;
+	color: #e43f3f; 
 }
 .latest-matches-box-wrapper span{
 	margin: 140px 0 0 130px;
@@ -192,8 +192,9 @@ a.active img{
 	width: 20px;
 }
 .latest-matches-box{
-	padding-left: 0;
-	padding-bottom: 15px;
+	margin: 0 23px 15px 0;
+	padding: 0;
+	display: inline-block;
 	cursor: pointer;
 }
 .latest-matches-box:hover p{
@@ -226,6 +227,9 @@ div.progress.latest-matches-box-bar span{
 	margin: 2px 0 0 0;
 	color: #fff;
 	font-weight: normal;
+}
+.latest-matches-box p:hover{
+	color: #fff;
 }
 .img-cover-box{
 	width: 32px;
@@ -392,7 +396,7 @@ p.online span{
 		border-right: 1px solid #d8d8d8; 
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 110px;
+		margin: 60px 0 0 122px;
 	}
 	.game-levels-wrapper{
 		margin: 0;
@@ -420,7 +424,7 @@ p.online span{
 		width: 78px;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 118px;
+		margin: 60px 0 0 130px;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -472,12 +476,11 @@ p.online span{
 	.latest-matches-box-wrapper:nth-of-type(even) p img{
 		margin: 0 0 0 30px;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box{
-		padding-right: 0;
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box, .latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
 		float: right;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
-		float: right;
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box:nth-of-type(odd){
+		margin-right: 0;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box .box-bar-cover{
 		float: left;
@@ -490,5 +493,34 @@ p.online span{
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -25px 0 0 85px;
+	}
+}
+@-moz-document url-prefix() {
+	.progress .badge{
+		margin-left: -15px;
+	}
+	div.progress.latest-matches-box-bar span{
+		margin-left: 0;
+		left: auto;
+	}
+	.latest-matches-box-wrapper span{
+			margin-left: 145px;
+			left: 0;
+		}
+	@media screen and (min-width: 768px){
+		.latest-matches-box-wrapper span{
+			margin-left: -195px;
+			left: auto;
+		}
+	}
+	@media screen and (min-width: 990px){
+		.latest-matches-box-wrapper span{
+			margin-left: -220px;
+		}
+	}
+	@media screen and (min-width: 1200px){
+		.latest-matches-box-wrapper span{
+			margin-left: -165px;
+		}
 	}
 }
