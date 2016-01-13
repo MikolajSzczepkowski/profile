@@ -396,7 +396,7 @@ p.online span{
 		border-right: 1px solid #d8d8d8; 
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 122px;
+		margin: 60px 0 0 130px;
 	}
 	.game-levels-wrapper{
 		margin: 0;
@@ -424,7 +424,7 @@ p.online span{
 		width: 78px;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 130px;
+		margin: 60px 0 0 137px;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -474,7 +474,7 @@ p.online span{
 		float: right;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) p{
-		margin-left: 20px;
+		margin-left: 30px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) p img{
 		margin: 0 0 0 30px;
@@ -489,10 +489,10 @@ p.online span{
 		float: left;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 111px;
+		margin: 60px 0 0 117px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) span{
-		margin: 63px 0 0 133px;
+		margin: 63px 0 0 147px;
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -25px 0 0 85px;
@@ -512,18 +512,18 @@ p.online span{
 		}
 	@media screen and (min-width: 768px){
 		.latest-matches-box-wrapper span{
-			margin-left: -195px;
+			margin-left: -220px;
 			left: auto;
 		}
 	}
 	@media screen and (min-width: 990px){
 		.latest-matches-box-wrapper span{
-			margin-left: -220px;
+			margin-left: -238px;
 		}
 	}
 	@media screen and (min-width: 1200px){
 		.latest-matches-box-wrapper span{
-			margin-left: -165px;
+			margin-left: -178px;
 		}
 	}
 }
