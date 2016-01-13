@@ -5,6 +5,12 @@ $(function (){
 			$(this).addClass("active");
 		}
 	});
+	$(document).on("click", ".radio", function(){
+		if (!$(this).hasClass("active")) {
+			$(".radio").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
 	$(document).on("click", "#likeButton", function(){
 		$(this).find("img").attr("src", "images/liked.png")
 	});
