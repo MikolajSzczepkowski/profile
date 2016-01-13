@@ -29,16 +29,16 @@
     color: #fff;
 }
 .match-info{
-	background: #363636;
 	margin-bottom: 7px;
 }
 .match-info p{
 	height: 30px;
 	margin: 0;
 	padding-top: 6px;
+	border-bottom: 1px solid #D8D8D8;
+	padding-bottom: 5px;
 	font-size: 12px;
 	font-style: italic;
-	color: #fff;
 }
 @media screen and (min-width: 480px){
 	.team-inner-wrapper{
