@@ -506,8 +506,8 @@ p.online span{
 		margin-left: 5px;
 		margin-bottom: 0;
 	}
-	.icon-no-bg a{
-		background: none;
+	.icon-bg a{
+		width: 35px;
 	}
 }
 @-moz-document url-prefix() {
