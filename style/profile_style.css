@@ -39,6 +39,7 @@
 .progress .badge{
 	position: absolute;
     margin-left: -20px;
+    margin-top: -9px;
     padding: 3px 7px;
     border-radius: 10px;
     background: #363636;
