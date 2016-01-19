@@ -14,6 +14,12 @@ $(function (){
 	$(document).on("click", "#likeButton", function(){
 		$(this).find("img").attr("src", "images/liked.png")
 	});
+	$(".player-avatar-box").on("mouseenter", function(){
+		$(this).parent().find(".player-box-bar span").css("opacity", "1");
+	});
+	$(".player-avatar-box").on("mouseleave", function(){
+		$(this).parent().find(".player-box-bar span").css("opacity", "0");
+	});
 
 	$("nav a").on("click", function(e){
 		e.preventDefault();
