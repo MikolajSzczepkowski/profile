@@ -12,7 +12,14 @@ $(function (){
 		}
 	});
 	$(document).on("click", "#likeButton", function(){
-		$(this).find("img").attr("src", "images/liked.png")
+		if (!$(this).hasClass("liked")) {
+			$(this).find("img").attr("src", "images/liked.png");
+			$(this).addClass("liked");
+		}
+		else{
+			$(this).find("img").attr("src", "images/like.png");
+			$(this).removeClass("liked");
+		}
 	});
 	$(".player-avatar-box").on("mouseenter", function(){
 		$(this).parent().find(".player-box-bar span").css("opacity", "1");
