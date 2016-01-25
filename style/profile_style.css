@@ -37,8 +37,8 @@
 .player-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-top: -11px;
-	margin-bottom: 8px;
+	margin-top: -15px;
+	margin-bottom: 12px;
 	background: #d8d8d8;
 }
 .box-bar-cover{
@@ -220,7 +220,7 @@ a.active img{
 .latest-matches-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-bottom: 9px;
+	margin-bottom: 12px;
 	background: #d8d8d8;
 }
 .latest-matches-box-bar .box-bar-cover{
