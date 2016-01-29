@@ -345,30 +345,30 @@
 .ratings-wrapper{
 	padding: 0;
 }
-.report-match-wrapper{
-	top: 1200px;
+.profile-report-match-wrapper{
+	top: 300px;
 	padding: 20px 30px 300px 30px;
 	background: rgba(0, 0, 0, 0.8);
 	border-top: 3px solid #e43f3f;
 	border-bottom: 3px solid #e43f3f;
 }
-.report-match-wrapper .topic-wrapper .text-holder{
+.profile-report-match-wrapper .topic-wrapper .text-holder{
 	margin: 111px 0px 0px;
 }
-.report-match-wrapper .topic-wrapper .text-holder textarea{
+.profile-report-match-wrapper .topic-wrapper .text-holder textarea{
 	background: none;
 	color: #fff;
 	border: 1px solid #fff;
 }
-.report-match-wrapper .topic-wrapper ul{
+.profile-report-match-wrapper .topic-wrapper ul{
 	margin: 0;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.8);
 }
-.report-match-wrapper .topic-wrapper ul:hover{
+.profile-report-match-wrapper .topic-wrapper ul:hover{
 	margin: 0;
 }
-.report-match-wrapper button{
+.profile-report-match-wrapper button{
 	height: 35px;
 	margin-top: 66px;
 	float: right;
@@ -377,10 +377,10 @@
 	color: #fff;
 	font-style: italic;
 }
-.report-match-wrapper button:hover{
+.profile-report-match-wrapper button:hover{
 	background: #363636;
 }
-.report-match-wrapper .support-text-box{
+.profile-report-match-wrapper .support-text-box{
 	padding: 15px;
 }
 .report input{
@@ -594,10 +594,10 @@ p.chat-message{
 	.match-info.game-chat p{
 		height: auto;
 	}
-	.report-match-wrapper{
-		top: 700px;
+	.profile-report-match-wrapper{
+		top: 100px;
 	}
-	.report-match-wrapper button{
+	.profile-report-match-wrapper button{
 		margin-top: 0;
 	}
 }
@@ -634,7 +634,7 @@ p.chat-message{
 	.create-game-id-wrapper, .choose-team-wrapper, .check-players-wrapper, .game-payment-wrapper{
 		top: 100px;
 	}
-	.report-match-wrapper{
+	.profile-report-match-wrapper{
 	top: 0;
 	}
 }

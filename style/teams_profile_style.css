@@ -1,9 +1,13 @@
 .team-inner-wrapper{
 	width: 245px;
+	margin-left: -14px;
 	padding: 0 0 10px 0;
 }
 .team-main{
 	padding: 0;
+}
+.team-box{
+	width: 100%;
 }
 .team-box div{
 	width: 120px;
@@ -28,10 +32,10 @@
     font-style: italic;
     color: #fff;
 }
-.match-info{
+.friends-info{
 	margin-bottom: 7px;
 }
-.match-info p{
+.friends-info p{
 	height: 30px;
 	margin: 0;
 	padding-top: 6px;
@@ -43,5 +47,13 @@
 @media screen and (min-width: 480px){
 	.team-inner-wrapper{
 		width: auto;
+	}
+	.team-box{
+		width: auto;
+	}
+}
+@media screen and (min-width: 768px){
+	.team-inner-wrapper{
+		margin-left: 0;
 	}
 }
