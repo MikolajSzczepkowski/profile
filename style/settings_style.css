@@ -21,13 +21,16 @@
 	padding-right: 10px;
 	padding-left: 0;
 }
+.settings-wrapper .img-holder.console img{
+	background: #363636;
+}
 .settings-wrapper img{
 	margin-bottom: 10px;
 	float: right; 
 	padding: 21.5px;
 	background: #e43f3f;
 }
-.settings-wrapper label, .settings-wrapper:nth-of-type(3) p{
+.settings-wrapper label, .settings-wrapper.user-data p{
 	margin: 0 0 15px 0;
 	padding-top: 6px;
 	padding-bottom: 6px;
@@ -60,26 +63,26 @@
 	resize: none;
 	border: 1px solid #d8d8d8;
 }
-.settings-wrapper:nth-of-type(3){
+.settings-wrapper.user-data{
 	margin-top: 30px;
 }
-.settings-wrapper:nth-of-type(3) label, .settings-wrapper:nth-of-type(3) p{
+.settings-wrapper.user-data label, .settings-wrapper.user-data p{
 	padding: 6px 0;
 	background: #363636;
 }
-.settings-wrapper:nth-of-type(3) input{
+.settings-wrapper.user-data input{
 	border: 2px solid #363636; 	
 }
-.settings-wrapper:nth-of-type(3) .radio{
+.settings-wrapper.user-data .radio{
 	padding: 4px 0;
 	background: #e43f3f;
 	border: 2px solid #363636;
 	cursor: pointer;
 }
-.settings-wrapper:nth-of-type(3) .radio:nth-of-type(odd){
+.settings-wrapper.user-data .radio:nth-of-type(odd){
 	border-right: none;
 }
-.settings-wrapper:nth-of-type(3) .radio.active, .settings-wrapper:nth-of-type(3) .radio:hover, .settings-wrapper input[type="submit"]:hover{
+.settings-wrapper.user-data .radio.active, .settings-wrapper.user-data .radio:hover, .settings-wrapper input[type="submit"]:hover{
 	background: #363636;
 }
 .settings-wrapper input[type="radio"]{

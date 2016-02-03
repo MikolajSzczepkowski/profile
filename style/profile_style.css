@@ -60,6 +60,7 @@
 .player-box .player-avatar-box{
 	width: 120px;
 	background: #fff;
+	cursor: pointer;
 }
 .player-avatar-box>img{
 	width: 120px;
@@ -449,9 +450,6 @@ div.progress.latest-matches-box-bar span{
 	}
 }
 @media screen and (min-width: 1200px){
-	.player-box-bar{
-		margin-left: 16px;  
-	}
 	.player-box .player-avatar-box{
 		margin-left: 16px;
 	}

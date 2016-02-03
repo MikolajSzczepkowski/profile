@@ -34,6 +34,7 @@
 }
 .friends-info{
 	margin-bottom: 7px;
+	padding-right: 40px;
 }
 .friends-info p{
 	height: 30px;
@@ -55,5 +56,13 @@
 @media screen and (min-width: 768px){
 	.team-inner-wrapper{
 		margin-left: 0;
+	}
+}
+@media screen and (min-width: 1200px){
+	.friends-info{
+		margin-left: 15px;
+	}
+	.team-main{
+		margin-left: 15px;
 	}
 }
