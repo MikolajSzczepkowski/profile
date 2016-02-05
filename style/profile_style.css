@@ -77,9 +77,9 @@
 	opacity: 1;
 }
 a.player-edit{
-	margin: 0 0 0 85px;
+	margin: 3px 0 0 85px;
+	padding: 0;
 	position: absolute;
-	opacity: 0;
 	background: #1182f5;
 	z-index: 2;
 }
@@ -446,6 +446,9 @@ div.progress.latest-matches-box-bar span{
 	}
 	.latest-matches-box-wrapper span{
 		margin: 60px 0 0 134px;
+	}
+	a.player-edit{
+		opacity: 0;
 	}
 }
 @media screen and (min-width: 1024px){
