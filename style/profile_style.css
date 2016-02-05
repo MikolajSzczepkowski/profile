@@ -77,7 +77,8 @@
 	opacity: 1;
 }
 a.player-edit{
-	margin: 3px 0 0 85px;
+	right: 0;
+	margin: 3px 35px 0 0;
 	padding: 0;
 	position: absolute;
 	background: #1182f5;
