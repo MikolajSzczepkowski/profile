@@ -66,11 +66,16 @@
 	background: #fff;
 	cursor: pointer;
 }
-.player-avatar-box>img{
+.player-avatar-container{
+	width: 120px;
+	margin: 0 auto;
+	display: block;
+}
+.player-avatar-container>img{
 	width: 120px;
 	border: 3px solid #1182f5;
 }
-.player-avatar-box:hover>img{
+.player-avatar-container:hover>img{
 	opacity: 0.5;
 }
 .player-avatar-box:hover a, .player-avatar-box:hover a img{
