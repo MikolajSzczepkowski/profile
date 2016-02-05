@@ -22,21 +22,25 @@
 	padding-left: 0;
 }
 .settings-wrapper .img-holder.console img{
+	padding: 21.5px;
 	background: #363636;
 }
 .settings-wrapper img{
 	margin-bottom: 10px;
 	float: right; 
-	padding: 21.5px;
+	padding: 23px;
 	background: #e43f3f;
 }
 .settings-wrapper label, .settings-wrapper.user-data p{
-	margin: 0 0 15px 0;
+	margin-bottom: 15px;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background: #e43f3f;
 	color: #fff;
 	font-weight: bold;
+}
+.settings-wrapper label.gender{
+	margin-top: 0;
 }
 .settings-wrapper input{
 	height: 32px;
