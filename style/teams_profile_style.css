@@ -9,8 +9,9 @@
 .team-box{
 	width: 100%;
 }
-.team-box div{
+.team-box>div{
 	width: 120px;
+	margin-bottom: 20px;
 	cursor: pointer;
 }
 .team-box img{
@@ -23,6 +24,9 @@
 .team-box div:hover p{
 	background: #E43F3F;
 }
+.team-box>div:hover .badge{
+	opacity: 1;
+}
 .team-box p{
 	width: 120px;
     margin-top: 3px;
@@ -31,6 +35,23 @@
     font-size: 12px;
     font-style: italic;
     color: #fff;
+}
+.team-box-bar{
+	width: 120px;
+	height: 3px;
+	margin-bottom: 12px;
+	background: #d8d8d8;
+}
+.team-box-bar .box-bar-cover{
+	background: #363636;
+}
+.team-box-bar .badge{
+	position: absolute;
+	margin-left: 42px;
+    margin-top: -9px;
+    display: block;
+    background: #363636;
+    opacity: 0;
 }
 .friends-info{
 	margin-bottom: 7px;
